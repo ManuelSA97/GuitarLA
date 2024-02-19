@@ -20,13 +20,13 @@ img {
     max-width: 100%;
 }
 
-[class$='__contenedor']{
+[class*='__contenedor']{
     max-width: 120rem;
     margin: 0 auto;
     width: 95%;
 }
 
-[class$='__heading']{
+[class*='__heading']{
     font-size: 4rem;
     text-align: center;
     font-weight: 900;
@@ -220,4 +220,63 @@ img {
     background-color: var(--primary);
     color: white;
 
+}
+
+.aprende{
+    padding: 10rem 0;
+    margin-top: 10rem;
+    background-image: linear-gradient(to right, rgb(0 0 0 / .7), rgb(0 0 0 / .7)), url(/img/cursos_bg.jpg);
+    background-size: cover;
+    background-position: 50%;
+}
+
+@media (min-width: 768px) { 
+    .aprende__grid{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+    }
+}
+
+.aprende__contenido{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 768px) { 
+    .aprende__contenido{
+        grid-column: 2 / 3;
+    }
+}
+
+
+.aprende__heading{
+    padding: 5rem 2rem;
+    margin: 0;
+}
+
+.aprende__texto{
+    color: white;
+    text-align: center;
+    font-size: 2.4rem;
+    
+}
+
+.aprende__link{
+    margin-top: 2rem;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    padding: 1rem 5rem;
+    border: 2px solid var(--primary);
+    font-size: 1.4rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    transition-property: background-color;
+    transition-duration: .3s;
+}
+
+.aprende__link:hover{
+    background-color: var(--primary);
 }
