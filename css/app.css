@@ -222,6 +222,42 @@ img {
 
 }
 
+.producto__label{
+    font-size: 2.2rem;
+    margin-right: 1rem;
+}
+
+.producto__cantidad{
+    border: 2px solid var(--primary);
+    padding: 1rem;
+}
+
+.producto__cantidad:focus-visible{
+    outline: 2px solid var(--primary);
+    border: none;
+}
+
+.producto__agregar-carrito{
+    margin-top: 6rem;
+    display: block;
+    background-color: var(--primary);
+    text-decoration: none;
+    text-transform: uppercase;
+    border: none;
+    text-align: center;
+    padding: 2rem 5rem;
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 700;
+    transition: background-color;
+    transition-duration: .3s;
+}
+
+.producto__agregar-carrito:hover{
+    background-color: var(--negro);
+    cursor: pointer;
+}
+
 .aprende{
     padding: 10rem 0;
     margin-top: 10rem;
@@ -295,6 +331,15 @@ img {
     .blog__grid{
         grid-template-columns: repeat(4,1fr);
     }
+    .blog__grid--pagina{
+        grid-template-columns: repeat(3,1fr);
+
+    }
+}
+
+.entrada{
+    max-width: 80rem;
+    margin: 0 auto;
 }
 
 .entrada__contenido{
