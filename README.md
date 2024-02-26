@@ -1,0 +1,1 @@
+Sitio web de una tienda de guitarras ficticia con paginas internas, a modo de práctica en el tema de @keyframes, Creada con HTML y CSS, utilizando la motodología BEM. Sitio: https://guitarla-jmsa.netlify.app/
